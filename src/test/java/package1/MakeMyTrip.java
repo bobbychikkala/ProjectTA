@@ -70,7 +70,7 @@ public class MakeMyTrip {
 		System.out.println("Cheapest flight Price is :"+leastPrice);
 		System.out.println("Dated on " +leastPriceofDate);
 		//dates.get(k).click();
-		Assert.assertTrue(true);
+	
 	}
 
 	
