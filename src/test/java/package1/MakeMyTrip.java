@@ -14,6 +14,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import junit.framework.Assert;
+
 
 
 
@@ -68,6 +70,7 @@ public class MakeMyTrip {
 		System.out.println("Cheapest flight Price is :"+leastPrice);
 		System.out.println("Dated on " +leastPriceofDate);
 		//dates.get(k).click();
+		Assert.assertTrue(false);
 	}
 
 	
