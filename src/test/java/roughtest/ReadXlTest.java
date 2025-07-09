@@ -15,12 +15,6 @@ public class ReadXlTest {
 
 System.out.println(Arrays.deepToString(myArr));
 
-	for(int i=0;i<myArr.length;i++) {
-		
-		for(int j=0 ; j<myArr[i].length;j++) {
-			System.out.print(myArr[i][j]+" ");
-		}System.out.println();
-	}
-		
+
 	}
 }
