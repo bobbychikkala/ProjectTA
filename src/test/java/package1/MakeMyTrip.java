@@ -78,8 +78,7 @@ public class MakeMyTrip {
 	public String[][] getData(){
 		return new String [][] {
 			{"Hyderabad","Bengaluru"}, 
-			{"Bengaluru","Hyderabad"}, 
-			{"Bengaluru","Dubai"},	
+			{"Bengaluru","Hyderabad"}, 	
 			{"Chennai","Delhi"},
 			{"Mumbai","Delhi"}, 
 			{"Kolkata","Delhi"}
