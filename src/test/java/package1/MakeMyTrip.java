@@ -79,7 +79,7 @@ public class MakeMyTrip {
 		return new String [][] {
 			{"Hyderabad","Bengaluru"}, 
 			{"Bengaluru","Hyderabad"}, 	
-			{"Chennai","Delhi"},
+			
 			{"Mumbai","Delhi"}, 
 			{"Kolkata","Delhi"}
 				 

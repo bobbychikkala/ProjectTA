@@ -13,7 +13,7 @@ public class ReadXlTest {
 	
 		String [][] myArr = ExcelReader.getCellValue(path, "Sheet1");
 
-System.out.println(Arrays.deepToString(myArr));
+
 
 
 	}
