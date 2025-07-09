@@ -5,6 +5,8 @@
     <classes>
       <class name="package1.MakeMyTrip"/>
       <class name="package1.WebTable"/>
+        <class name="testCases.BMWFirstCar"/>
+      <class name="testCases.TataFirstCar"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
