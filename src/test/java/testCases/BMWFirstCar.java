@@ -33,5 +33,6 @@ public class BMWFirstCar {
 		NewCarPage	newcar=	homepage.findNewCars();
 		BMWCars	bmw =newcar.goBMW();
 		System.out.println(bmw.getFirstCarTitle());
+		driver.quit();
 	}
 }
