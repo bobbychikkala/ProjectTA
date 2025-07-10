@@ -11,12 +11,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
 import base.BaseTestForPackage1;
-import utils.ExcelReader;
+import utils.DataUtil;
+
 
 
 public class MakeMyTrip extends BaseTestForPackage1 {
@@ -34,8 +34,7 @@ public class MakeMyTrip extends BaseTestForPackage1 {
 		driver.quit();
 	}
 
-
-	@Test(dataProvider ="cities")
+	@Test(dataProviderClass=DataUtil.class,dataProvider="cities")
 	public void testLeastPrice(String from,String to) throws IOException {
 		driver.findElement(By.id("fromCity")).sendKeys(from);
 		driver.findElement(By.xpath("//*[@class='makeFlex column flexOne']")).click();
@@ -72,10 +71,4 @@ public class MakeMyTrip extends BaseTestForPackage1 {
 	
 	}
 
-	
-	@DataProvider(name ="cities")
-	public String[][] getData(){
-		return ExcelReader.dataProvider(super.excelPath, "MMT");
-				 
-	}
 }

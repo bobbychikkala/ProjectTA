@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 
 import base.BaseTestForPackage1;
+import utils.DataUtil;
 import utils.ExcelReader;
 
 import org.testng.AssertJUnit;
@@ -22,14 +23,10 @@ public class WebTable extends BaseTestForPackage1 {
 	static WebDriver driver = new ChromeDriver();
 	static String innings;
 	
-	@DataProvider(name="inningNo")
-	public  String[][]dataSet(){
-		
-		return  ExcelReader.dataProvider(super.excelPath, "Cricbuzz");
-	}
+	
 
-	@Test(dataProvider ="inningNo",priority=1)
-	public  void testCricketScore(String inning,String url) {
+	@Test(dataProviderClass=DataUtil.class,dataProvider ="inningNo",priority=1)
+	public void testCricketScore(String inning,String url) {
 		driver.get(url);
 		innings=inning;
 		driver.manage().window().maximize();

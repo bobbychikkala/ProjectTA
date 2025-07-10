@@ -13,5 +13,5 @@ public class BaseTestForPackage1 {
 	 * System.out.println("Browser closed."); } }
 	 */
     
-    public String excelPath = "./src/test/resources/testData.xlsx";
+  //  public String excelPath = "./src/test/resources/testData.xlsx";
 }
