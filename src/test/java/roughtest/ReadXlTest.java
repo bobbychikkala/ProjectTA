@@ -14,7 +14,5 @@ public class ReadXlTest {
 		String [][] myArr = ExcelReader.getCellValue(path, "Sheet1");
 
 
-
-
 	}
 }
