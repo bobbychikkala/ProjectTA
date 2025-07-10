@@ -16,4 +16,8 @@ public class DataUtil {
 		return  ExcelReader.dataProvider(excelPath, "Cricbuzz");
 	}
 	
+	@DataProvider(name="selectBrowser")
+	public String [][] dataBrowsers(){
+		return ExcelReader.dataProvider(excelPath, "SetUp");
+	}
 }

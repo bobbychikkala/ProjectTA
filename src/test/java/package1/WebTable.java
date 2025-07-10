@@ -5,19 +5,14 @@ import org.testng.annotations.Test;
 
 import base.BaseTestForPackage1;
 import utils.DataUtil;
-import utils.ExcelReader;
-
 import org.testng.AssertJUnit;
 
 import java.time.Duration;
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.DataProvider;
 
 public class WebTable extends BaseTestForPackage1 {
 	static WebDriver driver = new ChromeDriver();
