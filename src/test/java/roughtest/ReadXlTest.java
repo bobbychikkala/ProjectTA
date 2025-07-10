@@ -1,6 +1,6 @@
 package roughtest;
 
-import java.util.Arrays;
+
 
 import utils.ExcelReader;
 
@@ -11,7 +11,7 @@ public class ReadXlTest {
 		String path = "./src/test/resources/testData.xlsx"  ;
 		System.out.println(ExcelReader.getCellValue(path, "Sheet1"));
 	
-		String [][] myArr = ExcelReader.getCellValue(path, "Sheet1");
+		
 
 
 	}

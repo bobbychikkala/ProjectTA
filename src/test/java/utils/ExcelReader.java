@@ -7,7 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader {
 
-    public static String[][] getCellValue(String filePath, String sheetName) {
+    public static String[][] dataProvider(String filePath, String sheetName) {
     	
     	 String [][]value = null;
         try (FileInputStream fis = new FileInputStream(filePath);

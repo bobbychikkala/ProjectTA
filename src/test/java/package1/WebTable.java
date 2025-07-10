@@ -1,6 +1,11 @@
 package package1;
 
 import org.testng.annotations.Test;
+
+
+import base.BaseTestForPackage1;
+import utils.ExcelReader;
+
 import org.testng.AssertJUnit;
 
 import java.time.Duration;
@@ -13,23 +18,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 
-public class WebTable {
+public class WebTable extends BaseTestForPackage1 {
 	static WebDriver driver = new ChromeDriver();
 	static String innings;
 	
 	@DataProvider(name="inningNo")
 	public  String[][]dataSet(){
-		String url1="https://www.cricbuzz.com/live-cricket-scorecard/106673/rsa-vs-aus-final-icc-world-test-championship-final-2025";
-		String url2="https://www.cricbuzz.com/live-cricket-scorecard/118586/sl-vs-ban-1st-test-bangladesh-tour-of-sri-lanka-2025";
-		return   new String[][]{
-			{"innings_1",url1},
-			{"innings_2",url1},
-			{"innings_3",url1},
-			{"innings_4",url1},
-			{"innings_1",url2},
-			{"innings_2",url2},
-			{"innings_3",url2},
-			};
+		
+		return  ExcelReader.dataProvider(super.excelPath, "Cricbuzz");
 	}
 
 	@Test(dataProvider ="inningNo",priority=1)

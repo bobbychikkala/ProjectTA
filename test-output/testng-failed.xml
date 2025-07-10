@@ -7,7 +7,7 @@
         <methods>
           <include name="launchingBrowser"/>
           <include name="closingBrowser"/>
-          <include name="testLeastPrice" invocation-numbers="2 3 4 5"/>
+          <include name="testLeastPrice" invocation-numbers="3"/>
         </methods>
       </class> <!-- package1.MakeMyTrip -->
     </classes>

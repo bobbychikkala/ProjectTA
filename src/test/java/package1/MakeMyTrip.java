@@ -15,12 +15,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
+import base.BaseTestForPackage1;
+import utils.ExcelReader;
 
 
-
-
-
-public class MakeMyTrip {
+public class MakeMyTrip extends BaseTestForPackage1 {
 	static WebDriver driver = new ChromeDriver();
 	@BeforeTest
 	public void launchingBrowser(){
@@ -76,13 +75,7 @@ public class MakeMyTrip {
 	
 	@DataProvider(name ="cities")
 	public String[][] getData(){
-		return new String [][] {
-			{"Hyderabad","Bengaluru"}, 
-			{"Bengaluru","Hyderabad"}, 	
-			
-			{"Mumbai","Delhi"}, 
-			{"Kolkata","Delhi"}
+		return ExcelReader.getCellValue(super.excelPath, "MMT");
 				 
-		};
 	}
 }
