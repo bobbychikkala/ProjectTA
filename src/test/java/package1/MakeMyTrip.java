@@ -75,7 +75,7 @@ public class MakeMyTrip extends BaseTestForPackage1 {
 	
 	@DataProvider(name ="cities")
 	public String[][] getData(){
-		return ExcelReader.getCellValue(super.excelPath, "MMT");
+		return ExcelReader.dataProvider(super.excelPath, "MMT");
 				 
 	}
 }
