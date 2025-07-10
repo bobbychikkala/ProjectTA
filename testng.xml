@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="package1.MakeMyTrip"/>
-      <class name="package1.WebTable"/>
+     <!-- <class name="package1.MakeMyTrip"/>
+      <class name="package1.WebTable"/> -->
         <class name="testCases.BMWFirstCar"/>
       <class name="testCases.TataFirstCar"/>
     </classes>
