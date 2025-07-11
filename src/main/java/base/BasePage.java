@@ -20,4 +20,10 @@ public class BasePage {
 		
 		return firstCar.getDomAttribute("title");
 	}
+	@FindBy(xpath="//header/h1")
+	public WebElement getTitle;
+	public String getTitleOnPage()
+	{
+		return getTitle.getText();	
+	}
 }
