@@ -8,9 +8,9 @@ public class BMWCars extends BasePage {
 
 	public BMWCars(WebDriver driver) {
 		super(driver);
-		
+
 	}
 
-	
+
 
 }

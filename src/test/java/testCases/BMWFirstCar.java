@@ -26,7 +26,6 @@ public class BMWFirstCar extends BaseTest {
 		setUp(browser);
 		driver.get("https://www.carwale.com/");
 
-
 		HomePage homepage = new HomePage(driver);
 
 		NewCarPage	newcar=	homepage.findNewCars();
@@ -52,7 +51,7 @@ public class BMWFirstCar extends BaseTest {
 			Assert.assertEquals(toyoto.getTitleOnPage(), carTitle);	
 			System.out.println(toyoto.getTitleOnPage() + " "+carTitle);
 			break;	
-			
+
 		}
 
 	}
