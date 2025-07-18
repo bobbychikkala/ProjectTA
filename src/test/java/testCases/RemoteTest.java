@@ -53,7 +53,7 @@ public class RemoteTest {
 		driver = new RemoteWebDriver(new URL("http://localhost:4444"),cap);
 		driver.get(url);
 		driver.manage().window().maximize();
-		Thread.sleep(10000);
+		Thread.sleep(12000);
 		driver.quit();
 	}
 }
